@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:powderblue;">
+<body style="background-color:powderblue;" onload="myFunction()">
 
 <h1>Hobby and Leisure Activity</h1>
 
@@ -20,23 +20,36 @@
 <section>
   <h2>Gaming:</h2>
   <ul>
-	<li>Inactive MTG player with tournment experience
-	<li>Inactive FFXI player
-	<li>Current FFXIV player - <a href="https://eu.finalfantasyxiv.com/lodestone/character/3977715/">player profile on Alexander@Gaia DC</a>
+	<li>Former Magic:The Gathering player with tournment experience
+	<li>Inactive Final Fantasy XI player
+	<li>Current Final Fantasy XIV player - <a href="https://eu.finalfantasyxiv.com/lodestone/character/3977715/">player profile on Alexander@Gaia DC</a>
   </ul>
-  <h2>Anime and manga:</h2>
+  <h2>Anime and Manga:</h2>
   <ul>
-	<li>Contributor and member of FSU JACT and <a href="https://tallahasseeanime.com/">FSU Freecon</a>
+	<li>Contributor and member of FSU Japanese Animation Club of Tallahassee (JACT) and <a href="https://tallahasseeanime.com/">FSU Freecon</a>
 	<li>Worked on various manga and anime fansub projects in the late 1990s/early 2000s
   </ul>
-  <h2>Sports:</h2>
+  <h2>Sports and Outdoor Activities:</h2>
   <ul>
 	<li>Various Met Office sport activities
-	<li>Inactive member of <a href="https://worldtangsoodo.com/">WTSDA</a> -- last trained in a studio in Fairfax county
+	<li>Inactive member of <a href="https://worldtangsoodo.com/">World Tang Soo Do Association (WTSDA)</a> -- last trained in a studio in Fairfax county
+	<li>Some experience with Aikido
+	<li>Member of National Trust, and frequent vistor to NT properties and other public gardens
   </ul>  
 </section>
 
 <p>Return to <a href="index.html">index page</a></p>
+
+<hr>
+
+<p>This is last updated on <span id="LastUpdate"></span></p>
+  
+<script>
+  function myFunction() {
+    var x = document.lastModified;
+    document.getElementById("LastUpdate").innerHTML = x;
+  }
+</script>
 
 </body>
 </html>

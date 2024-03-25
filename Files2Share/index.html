@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:powderblue;">
+<body style="background-color:powderblue;" onload="myFunction()">
 
 <h1>Public Files</h1>
 
@@ -14,6 +14,17 @@
 </section>
 
 <p>Return to <a href="../index.html">index page</a></p>
+
+<hr>
+
+<p>This is last updated on <span id="LastUpdate"></span></p>
+  
+<script>
+  function myFunction() {
+    var x = document.lastModified;
+    document.getElementById("LastUpdate").innerHTML = x;
+  }
+</script>
 
 </body>
 </html>

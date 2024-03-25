@@ -16,10 +16,10 @@
 		}
 	
 	</style>
-
-
 </head>
-<body style="background-color:powderblue;">
+
+<body style="background-color:powderblue;" onload="myFunction()">
+
 <h1>Welcome to scchan21.github.io</h1>
 
 <section>
@@ -84,6 +84,16 @@
 	<p><a href="leisure.html">Activities and Memberships</a></p>
 </section>
 
+<hr>
+
+<p>This is last updated on <span id="LastUpdate"></span></p>
+  
+<script>
+  function myFunction() {
+    var x = document.lastModified;
+    document.getElementById("LastUpdate").innerHTML = x;
+  }
+</script>
 
 </body>
 </html>
